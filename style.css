@@ -5,6 +5,8 @@
 }
 
 header .container{
+    position: fixed;
+    top: 0px;
     width: 100%;
     display: flex;
     font-size: 0px;
@@ -14,6 +16,7 @@ header .container{
 header img{
     vertical-align: middle;
     padding: 6px 10px;
+    margin-left: 30px;
 }
 
 header nav{
@@ -39,6 +42,7 @@ header nav a:hover{
 
 #pic .container{
     width: 100%;
+    padding: 62px 0px 0px 0px;
 }
 
 #pic .container img{
@@ -65,9 +69,13 @@ header nav a:hover{
     width: 700px;
 }
 
+#product1{
+    background-color: #ecf0f1;
+}
+
 #product1 .container{
     display: flex;
-    background-color: #ecf0f1;
+    
 }
 
 #product1 .item{
