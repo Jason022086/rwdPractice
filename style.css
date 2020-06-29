@@ -33,6 +33,7 @@ header nav a{
     padding: 0px 15px;
     text-decoration: none;
     color: white;
+    transition: .5s ;
     
 }
 
@@ -40,17 +41,20 @@ header nav a:hover{
     background-color: teal;
 }
 
-#pic .container{
-    width: 100%;
+#pic .banner{
+    min-width: 1200px;
+    /* max-width: 100%; */
     padding: 62px 0px 0px 0px;
+    
 }
 
-#pic .container img{
+#pic .banner img{
     width: 100%;
 }
 
 #about .container{
-    padding: 90px;
+    min-width: 1200px;
+    padding: 90px 0px;
     text-align: center;
 }
 
@@ -64,21 +68,25 @@ header nav a:hover{
 }
 
 #about p{
+    font-size: 20px;
     padding: 30px 0px 0px 0px;
     margin: auto;
     width: 700px;
 }
 
 #product1{
+    min-width: 1200px;
     background-color: #ecf0f1;
 }
 
 #product1 .container{
+    text-align: center;
     display: flex;
     
 }
 
 #product1 .item{
+    
     width: 50%;
 }
 
@@ -87,18 +95,24 @@ header nav a:hover{
 }
 
 #product1 .text{
+    font-size: 20px;
     padding: 0px 30px;
     text-align: center;
+    margin: auto;
 }
 
 #product1 .text h3{
     font-size: 30px;
-    padding: 40px 0px 30px 0px;
+    padding: 0px 0px 30px 0px;
 }
 
+
+
+
 #product2 .container{
+    min-width: 1200px;
     display: flex;
-    padding: 90px;
+    padding: 90px 0px;
 }
 
 #product2 .item{
@@ -107,12 +121,40 @@ header nav a:hover{
 }
 
 #product2 p{
+    font-size: 16px;
     padding: 20px;
 }
 
 .footer{
+    min-width: 1200px;
     background-color: #000;
     color: #ecf0f1;
     text-align: center;
     padding: 25px 0px;
 }   
+
+@media screen and (max-width:450px){
+    #product1 .container{
+        padding: 35px;
+        text-align: center;
+        display: block;
+        
+    }
+
+    #product1 .item{
+    
+        width: 100%;
+    }
+
+    #product1 .item img{
+        width: 600px;
+    }
+
+    #product1 .text{
+        font-size: 20px;
+        width: 600px;
+        padding: 0px 30px;
+        text-align: center;
+        margin: auto;
+    }
+}
